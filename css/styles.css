@@ -1,97 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
 * {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
 }
-
-h1 {
-  font-weight: bold;
-  color: white;
-}
-
-h3 {
-  font-weight: bold;
-  color: white;
-}
-
+html,
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  font-family: "Manrope", sans-serif;
+  background-image: linear-gradient(
+    to right top,
+    #2b6b43,
+    #358069,
+    #4c958d,
+    #6da9ad,
+    #92bcc7
+  );
 }
 
-p {
-  text-decoration: underline;
-}
-.background-image {
-  background-color: #efe2ba;
-
-  background-image: url("https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/austin/Soccer-Zone-Listing-Image-bf00b0019ff282a_bf00b114-ac61-54f8-3adb305c6936f3a0.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: blur(5px);
-  height: 100vh;
-}
-
-.header {
-  background-color: #4056a1;
-  position: fixed;
-  top: auto;
-  width: 100%;
-}
-
-.footer {
-  background-color: #4056a1;
-  margin-top: auto;
-}
-
-.gallery {
-  position: static;
-  display: grid;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: left;
+header {
+  color: white;
+  display: fixed;
+  justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  flex-direction: row;
+  height: 90px;
+  padding: 0 40px;
+}
+
+header .logo {
+  color: #2b6b43;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+header .menu ul {
+  display: flex;
+}
+
+header .menu ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu li a {
+  color: white;
+  text-decoration: none;
+  padding-right: 20px;
+  font-size: 1rem;
+}
+
+img {
+  height: auto;
+  max-width: 80%;
+}
+
+.menu-btn {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 10px 15px;
+  border-radius: 20px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 40px; */
+}
+.container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 20px 10px;
+}
+#home {
+  height: calc(100vh - 90px);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.gallery img {
-  width: 200%;
-  max-width: 250px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
+#home .info-section {
+  width: 50%;
 }
 
-.gallery::after {
-  content: "";
-  width: 350px;
+#home .info-section h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 2rem;
 }
 
-.logo {
-  position: fixed;
-  top: 14%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#home .info-section h4 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 2rem;
+  letter-spacing: 2.5px;
 }
 
-.logo img {
-  width: 100%;
-  max-width: 250px;
-  height: 180px;
+#home .info-section .call-actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.item {
-  width: 250px;
-  text-align: center;
-  display: block;
-  background-color: transparent;
-  border: 1px solid transparent;
+.action-btn,
+.action-ghost-btn {
+  padding: 15px 15px;
+  border-radius: 30px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.action-btn {
+  background: white;
+  color: #6da9ad;
   margin-right: 20px;
-  margin-bottom: 1px;
-  float: left;
+}
+
+.action-ghost-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+#home .photos {
+  position: relative;
+  width: 60%;
+}
+
+#home .photos .group {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  z-index: 1;
+  transform: translate3d(0, -350px, 0);
+}
+
+#home .photos .couple {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  z-index: 2;
+  transform: translate3d(200px, 25px, 0);
+}
+
+.logo-2 {
+  position: fixed;
+  bottom: 0;
+  left: 200px;
+}
+
+.national-forest-logo {
+  float: right;
+}
+
+.national-forest-logo img {
+  height: 200px;
+  width: 200px;
 }
