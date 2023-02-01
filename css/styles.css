@@ -1,0 +1,97 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: bold;
+  color: white;
+}
+
+h3 {
+  font-weight: bold;
+  color: white;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  text-decoration: underline;
+}
+.background-image {
+  background-color: #efe2ba;
+
+  background-image: url("https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/austin/Soccer-Zone-Listing-Image-bf00b0019ff282a_bf00b114-ac61-54f8-3adb305c6936f3a0.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(5px);
+  height: 100vh;
+}
+
+.header {
+  background-color: #4056a1;
+  position: fixed;
+  top: auto;
+  width: 100%;
+}
+
+.footer {
+  background-color: #4056a1;
+  margin-top: auto;
+}
+
+.gallery {
+  position: static;
+  display: grid;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 200%;
+  max-width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
+
+.logo {
+  position: fixed;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo img {
+  width: 100%;
+  max-width: 250px;
+  height: 180px;
+}
+
+.item {
+  width: 250px;
+  text-align: center;
+  display: block;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-right: 20px;
+  margin-bottom: 1px;
+  float: left;
+}
