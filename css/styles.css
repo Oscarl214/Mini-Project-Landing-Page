@@ -32,7 +32,7 @@ header {
 }
 
 header .logo {
-  color: #2b6b43; /*Color of the text for my Company Name*/
+  color: #c19a6b; /*Color of the text for my Company Name*/
   font-weight: 700; /*The weight for the font*/
   font-size: 50px; /*The size of the text*/
 }
@@ -62,7 +62,8 @@ img {
 }
 
 .footer {
-  background-color: burlywood;
+  background-image: linear-gradient(to right bottom, #c19a6b, #4c958d, #6da9ad);
+  height: 220px;
 }
 .menu-btn {
   background: rgba(
