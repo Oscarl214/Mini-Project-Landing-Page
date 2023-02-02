@@ -61,6 +61,9 @@ img {
   width I want within the constrain of set width within each picture as you can see in the id selector below where I target my image*/
 }
 
+.footer {
+  background-color: burlywood;
+}
 .menu-btn {
   background: rgba(
     255,
