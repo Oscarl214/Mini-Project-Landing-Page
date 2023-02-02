@@ -13,7 +13,7 @@ body {
   background-image: linear-gradient(
     to right top,
     #2b6b43,
-    #358069,
+    #c19a6b,
     #4c958d,
     #6da9ad,
     #92bcc7
@@ -62,7 +62,7 @@ img {
 }
 
 .footer {
-  background-image: linear-gradient(to right bottom, #c19a6b, #4c958d, #6da9ad);
+  background-image: linear-gradient(to left bottom, #c19a6b, #4c958d, #6da9ad);
   height: 220px;
 }
 .menu-btn {
