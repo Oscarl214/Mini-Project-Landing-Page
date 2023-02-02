@@ -9,6 +9,7 @@
 html,
 body {
   /* Here I added the font-family as well, and I added a a backgroundimage made up of diffrent colors, I pulled these from my-color-space.com*/
+  height: 100%;
   font-family: "Manrope", sans-serif;
   background-image: linear-gradient(
     to right top,
