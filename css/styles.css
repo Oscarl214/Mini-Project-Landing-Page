@@ -1,11 +1,14 @@
+/*UNIVERSAL SELECTORS*/
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"); /* Font imported from Google */
 
 * {
   font-family: "Manrope", sans-serif; /* Font applied to all text */
   box-sizing: border-box; /* Font allows all divs to have padding and border in an elements total width and height, looks better once applied to all */
 }
+
 html,
 body {
+  /* Here I added the font-family as well, and I added a a backgroundimage made up of diffrent colors, I pulled these from my-color-space.com*/
   font-family: "Manrope", sans-serif;
   background-image: linear-gradient(
     to right top,
@@ -17,72 +20,82 @@ body {
   );
 }
 
+/*PROPERTIES THAT AFFECT MY HEADER AND CONTENTS WITHIN IT*/
 header {
-  color: white;
-  display: fixed;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  height: 90px;
-  padding: 0 40px;
+  color: white; /* Added a color property for the text*/
+  display: fixed; /*Fixed property to lock the header in place on the top of the webpage*/
+  justify-content: space-between; /* this property allowed for space-between my logo and menu options */
+  align-items: center; /* This property aligns my items around the center*/
+  flex-direction: row; /* This property allowed me to set the items in the same direction as the text */
+  height: 90px; /*this is how big my header is on the webpage */
+  padding: 0 40px; /* Added 0 padding to top because I want the header to start at 0, and then 40 on the right to create some space */
 }
 
 header .logo {
-  color: #2b6b43;
-  font-weight: 700;
-  font-size: 75px;
+  color: #2b6b43; /*Color of the text for my Company Name*/
+  font-weight: 700; /*The weight for the font*/
+  font-size: 75px; /*The size of the text*/
 }
 
 header .menu ul {
-  display: flex;
-  float: right;
+  display: flex; /*sets my list up as a flex-box container*/
+  float: right; /*sets my list on the right side of the header*/
 }
 
 header .menu ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /*sets my list items as a flex-box container*/
+  justify-content: center; /*centers my list items within their own box*/
+  align-items: center; /*centers my list items with each other*/
 }
 
 header .menu li a {
-  color: white;
-  text-decoration: none;
-  padding-right: 20px;
-  font-size: 1.5rem;
+  color: white; /* gives my list items a color of white*/
+  text-decoration: none; /*removes the underlined property that text receive when they have an embedded link*/
+  padding-right: 20px; /*some padding to the right of each item*/
+  font-size: 1.5rem; /*size of the text within the items*/
 }
 
 img {
-  height: auto;
-  max-width: 80%;
+  height: auto; /*height set to auto for my pictures because they were massive*/
+  max-width: 80%; /*max width that the images can display is at 80%, put this here so I can experiement with the
+  width I want within the constrain of set width within each picture as you can see in the id selector below where I target my image*/
 }
 
 .menu-btn {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ); /*the backgrounmd color of my Contact Us button*/
   padding: 10px 15px;
-  border-radius: 20px;
+  border-radius: 20px; /*Helps make the rounded pill shape*/
   width: 160px;
-  display: flex;
+  display: flex; /*Flex box container*/
   justify-content: center;
   align-items: center;
-  /* height: 40px; */
+  height: 40px; /*Size of my menu button*/
 }
 .container {
-  max-width: 1400px;
+  max-width: 1400px; /*Size of my container width wise*/
   margin: 0 auto;
 }
 #home {
-  height: calc(100vh - 90px);
-  overflow: hidden;
+  height: calc(
+    100vh - 90px
+  ); /*Here I calculated the total height I want my home page set up to the size of my header to make sure no space existed in between*/
+  overflow: hidden; /*Makes contents in Homepage dissapear if it goes over the size of the home page */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #home .info-section {
-  width: 50%;
+  width: 70%; /*Total width of my info section, set at 70%*/
 }
 
 #home .info-section h1 {
+  /*Edits for my text for my h1 info*/
   font-size: 5rem;
   font-weight: 900;
   color: white;
@@ -90,6 +103,7 @@ img {
 }
 
 #home .info-section h4 {
+  /*Edits for my text for my h4 info*/
   font-size: 1.1rem;
   font-weight: 300;
   color: white;
@@ -98,6 +112,7 @@ img {
 }
 
 #home .info-section .call-actions {
+  /*Edits for positioning of my buttons*/
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -105,6 +120,7 @@ img {
 
 .action-btn,
 .action-ghost-btn {
+  /*Edits for my buttons, used same properties as pill shaped button in my header*/
   padding: 15px 15px;
   border-radius: 30px;
   width: 160px;
@@ -119,31 +135,40 @@ img {
 }
 
 .action-btn {
+  /*Edits for my Contact-form button specifically*/
   background: white;
   color: #6da9ad;
   margin-right: 20px;
 }
 
 .action-ghost-btn {
+  /*Edits for my teMore Info button specifically*/
   background: transparent;
   border: 2px solid white;
   color: white;
 }
 
 #home .photos {
+  /*positioning properties for my photos*/
   position: relative;
-  width: 70%;
+  width: 80%;
 }
 
 #home .photos .group {
+  /*positioning properties for my group hiking photo*/
   position: absolute;
   width: 1000px;
   height: 400px;
   z-index: 1;
-  transform: translate3d(0, -350px, 0);
+  transform: translate3d(
+    0,
+    -350px,
+    0
+  ); /*transform property to help me set my picture behind my couple photo*/
 }
 
 #home .photos .couple {
+  /*positioning properties for my couple photo*/
   position: absolute;
   width: 1000px;
   height: 400px;
@@ -152,16 +177,19 @@ img {
 }
 
 .logo-2 {
+  /*positioning properties for my mock company logo*/
   position: fixed;
   bottom: 0;
   left: 200px;
 }
 
 .national-forest-logo {
+  /*positioning properties for the NAtional Park service logo, set it on the right of the footer*/
   float: right;
 }
 
 .national-forest-logo img {
+  /* properties for the national park service image*/
   height: 200px;
   width: 200px;
 }

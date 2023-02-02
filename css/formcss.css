@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
 body {
+  /* properties for the body of the webpage*/
   width: 100%;
   height: 100vh;
   margin: 0;
@@ -26,6 +27,7 @@ p {
 }
 
 form {
+  /*positioning properties for my form*/
   display: inline-block;
   width: 60vw;
   max-width: 500px;
@@ -35,6 +37,7 @@ form {
 }
 
 fieldset {
+  /*positioning properties for all my fieldsets throughout the form*/
   border: none;
   padding: 2rem 0;
   border-bottom: 3px solid #3b3b4f;
