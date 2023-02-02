@@ -34,7 +34,7 @@ header {
 header .logo {
   color: #2b6b43; /*Color of the text for my Company Name*/
   font-weight: 700; /*The weight for the font*/
-  font-size: 75px; /*The size of the text*/
+  font-size: 50px; /*The size of the text*/
 }
 
 header .menu ul {
